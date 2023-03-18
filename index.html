@@ -17,12 +17,18 @@
 
     <form id="survey-form">
       <label id="name-label" for="name">Name</label>
-      <input id="name" type="text" placeholder="Enter your name">
-      <label id="name-label" for="name">Email</label>
-      <input id="email" type="email" name="email" placeholder="Enter your email" >
-      <label id="name-label" for="name">Age (optional)</label>
-      <input id="number" type="number" placeholder="Enter your Age" >
-      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name...">
+      <label id="email-label" for="name">Email</label>
+      <input id="email" type="email" name="email" placeholder="Enter your email...">
+      <label id="number-label" for="name">Age (optional)</label>
+      <input id="number" type="number" placeholder="Enter your Age..." min="18" max="70">
+      
+      <label>Select your current role:</label>
+      <select name="role" id="dropdown">
+        <option value="student">Student</option>
+        <option value="developer">Software Developer</option>
+        <option value="engineer">Software Engineer</option>
+      </select>
       
 	    <input type="submit" value="Enviar">
     </form>
