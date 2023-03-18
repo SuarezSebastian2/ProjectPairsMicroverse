@@ -9,41 +9,82 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <h1 id="title">Microvers Pair Project Form</h1>
-
-    <p id="description">
-      This is a Survey Form made by Sebastian Suarez and Tomas da Silveira for Microverse Trials HTML/CSS Project 
-    </p>
+    <div class="header">
+      <h1 id="title">Microvers Pair Project Form</h1>
+  
+      <p id="description">
+        This is a Survey Form made by Sebastian Suarez and Tomas da Silveira for Microverse Trials HTML/CSS Project 
+      </p>
+    </div>
 
     <form id="survey-form">
-      <label id="name-label" for="name">Name</label>
-      <input id="name" type="text" placeholder="Enter your name...">
-      <label id="email-label" for="name">Email</label>
-      <input id="email" type="email" name="email" placeholder="Enter your email...">
-      <label id="number-label" for="name">Age (optional)</label>
-      <input id="number" type="number" placeholder="Enter your Age..." min="18" max="70">
+      <div class="form-survey">
+        <label id="name-label" type="text" for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Enter your name..." required >
+      </div>
+
+      <div class="form-survey">
+        <label id="email-label" for="name">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email..." required>
+      </div>
+
+      <div class="form-survey">
+        <label id="number-label" for="name">Age (optional)</label>
+        <input id="number" type="number" placeholder="Enter your Age..." min="18" max="70">
+      </div>
       
-      <label>Select your current role:</label>
-      <select name="role" id="dropdown">
-        <option value="student">Student</option>
-        <option value="developer">Software Developer</option>
-        <option value="engineer">Software Engineer</option>
-      </select>
+      <div class="form-survey">
+        <label>Select your current role:</label>
+
+        <select name="role" id="dropdown">
+          <option value="student">Student</option>
+          <option value="developer">Software Developer</option>
+          <option value="engineer">Software Engineer</option>
+        </select>
+      </div>
+
+      <label>Select your skills:</label>
       <label>
-        <input type="radio" name="developer-type" value="UI/UX">
-        UI/UX
+        <input type="checkbox" name="skill" value="JavaScript">
+        JavaScript
       </label>
       <label>
-        <input type="radio" name="developer-type" value="BackEnd">
-        BackEnd
+        <input type="checkbox" name="skill" value="Python">
+        Python
       </label>
       <label>
-        <input type="radio" name="developer-type" value="FrontEnd">
-        FrontEnd
+        <input type="checkbox" name="skill" value="React">
+        React
       </label>
-      <label>Any comments or suggestions?</label>
-      <textarea class="textarea" name="comment" id="comments" placeholder="Enter your comments here..."></textarea>
-	    <input class="submit" type="submit" value="Enviar">
+      <label>
+        <input type="checkbox" name="skill" value="NodeJS">
+        NodeJS
+      </label>
+      <label>
+        <input type="checkbox" name="skill" value="Go">
+        Go
+      </label>
+       
+      <div class="form-survey">
+        <label>
+          <input type="radio" name="developer-type" value="UI/UX">
+          UI/UX
+        </label>
+        <label>
+          <input type="radio" name="developer-type" value="BackEnd">
+          BackEnd
+        </label>
+        <label>
+          <input type="radio" name="developer-type" value="FrontEnd">
+          FrontEnd
+        </label>
+      </div>
+
+      <div class="form-survey">
+        <label>Any comments or suggestions?</label>
+        <textarea class="textarea" name="comment" id="comments" placeholder="Enter your comments here..."></textarea>
+        <input id="submit" class="submit" type="submit" value="Enviar">
+      </div>
     </form>
 
 
